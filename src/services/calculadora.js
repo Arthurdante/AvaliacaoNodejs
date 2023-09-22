@@ -37,8 +37,8 @@ class ServicoExercicio {
         }
         const resultado = Math.pow(num1, num2)
         return resultado
-      };
-      RaizQuadrada = (num1) => {
+    };
+    RaizQuadrada = (num1) => {
         if (isNaN(num1)) {
           throw new Error('Favor informar números')
         }
@@ -47,6 +47,6 @@ class ServicoExercicio {
         }
         const resultado = Math.sqrt(num1)
         return resultado
-      };
+    };
 }
 module.exports = ServicoExercicio
