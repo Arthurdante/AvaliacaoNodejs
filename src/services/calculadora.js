@@ -31,14 +31,14 @@ class ServicoExercicio {
         const resultado = num1 / num2
         return resultado
     }
-    Potencia = (num1, num2) => {
+    Potencia(num1, num2) {
         if (isNaN(num1) || isNaN(num2)) {
           throw new Error('Favor informar números')
         }
         const resultado = Math.pow(num1, num2)
         return resultado
     };
-    RaizQuadrada = (num1) => {
+    RaizQuadrada(num1) {
         if (isNaN(num1)) {
           throw new Error('Favor informar números')
         }
