@@ -1,13 +1,12 @@
-// const express = require('express')
-// const app = express()
-// const port = 3000
+const express = require('express')
+const app = express()
+const port = 3000
 
-// const exercicioRoutes = require('./src/routes/exercicio.js');
-// const exercicio2Routes = require('./src/routes/exercicio2.js');
+const Routes = require('./src/routes/calculadora.js');
 
-// app.use(express.json())
-// app.use(exercicioRoutes, exercicio2Routes)
+app.use(express.json())
+app.use(Routes)
 
-// app.listen(port, () => {
-//     console.log(`Servidor rodando na porta ${port}`)
-// })
+app.listen(port, () => {
+    console.log(`Servidor rodando na porta ${port}`)
+})
